@@ -5,7 +5,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Hapus basePath dan assetPrefix karena menggunakan custom domain
+
 };
 
 module.exports = nextConfig;
