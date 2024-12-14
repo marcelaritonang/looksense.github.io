@@ -27,11 +27,9 @@ jobs:
       - name: Add .nojekyll file
         run: touch out/.nojekyll
 
-      - name: Add CNAME file
-        run: cp CNAME out/
-
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out
           branch: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
